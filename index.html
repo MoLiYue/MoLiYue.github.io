@@ -174,8 +174,22 @@
       
         <h1 id="诶嘿"><a href="#诶嘿" class="headerlink" title="诶嘿"></a>诶嘿</h1><p>今天一时兴起，想把hexo与github自带的主页看看能不能融合一下，好充分利用一下我写的乱七八糟的东西。</p>
 <p>就查阅了一下：</p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yhpan/p/14977884.html">Hexo结合github搭建个人博客</a></p>
-<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000018024460">Hexo git deployer删除了提交历史记录该怎么办？</a></p>
+<ol>
+<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yhpan/p/14977884.html">Hexo结合github搭建个人博客</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html">使用hexo+github搭建免费个人博客详细教程</a></p>
+</li>
+</ol>
+<p>主要用的就是第二篇。<br>我简单题几条我自己做的改进。</p>
+<ol>
+<li><p>使用github时单独为博客建立一个仓库，之后用git管理，这并不影响hexo直接部署到github的个人主页上这个问题。如果不希望自己的源码被别人看到，可以设置成private的仓库。</p>
+</li>
+<li><p>在加载其他主题的时候我更建议使用<code>git submodule</code>来实现，而不是使用<code>git clone</code>。<br>这样更方便后续跟进更新。</p>
+</li>
+<li><p>我还没想好如何解决插入图片的问题。</p>
+</li>
+</ol>
+<h1 id="其他查阅的资料"><a href="#其他查阅的资料" class="headerlink" title="其他查阅的资料"></a>其他查阅的资料</h1><p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000018024460">Hexo git deployer删除了提交历史记录该怎么办？</a></p>
 
       
 
