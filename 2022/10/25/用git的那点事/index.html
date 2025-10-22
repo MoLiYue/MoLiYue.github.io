@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用git的那点事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="git config从头开始讲吧。 首先Github一般情况下是不容易访问的，由于已知原因访问速度极慢，所以一般我们使用代理来访问，本地的git库也同理。但是可能是我机场的问题，我无法通过ssh来push我的代码，因为22号端口被ban掉了，所以我就只能通过https来上传我的代码。 一开始我是在Mac上上传我的代码。在Mac上生成gpg的一个key之后按要求上传上去之后好像就可以正常通过http">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用git的那点事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="git config从头开始讲吧。 首先Github一般情况下是不容易访问的，由于已知原因访问速度极慢，所以一般我们使用代理来访问，本地的git库也同理。但是可能是我机场的问题，我无法通过ssh来push我的代码，因为22号端口被ban掉了，所以我就只能通过https来上传我的代码。 一开始我是在Mac上上传我的代码。在Mac上生成gpg的一个key之后按要求上传上去之后好像就可以正常通过http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用git的那点事">
 <meta property="og:url" content="https://moliyue.xyz/2022/10/25/%E7%94%A8git%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/index.html">
@@ -84,13 +84,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

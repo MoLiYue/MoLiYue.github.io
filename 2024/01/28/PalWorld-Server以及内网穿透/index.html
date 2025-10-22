@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>PalWorld Server以及内网穿透 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="最近PalWorld挺火的，看着也很好玩，我本来没想自己搭一个Dedicated Server，但是我和同学试了一下它的邀请码联机连不上，又想了想自己手上的资源，就打算自己搞个服务器联机玩了。 资源规划首先要根据手上现有的资源做规划。我本地有一个archlinux的小主机，前一阵子还入手了一年99的阿里云服务器，2 Core 2 GB RAM。 PalServer建议要4 Core 16GB RA">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>PalWorld Server以及内网穿透 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="最近PalWorld挺火的，看着也很好玩，我本来没想自己搭一个Dedicated Server，但是我和同学试了一下它的邀请码联机连不上，又想了想自己手上的资源，就打算自己搞个服务器联机玩了。 资源规划首先要根据手上现有的资源做规划。我本地有一个archlinux的小主机，前一阵子还入手了一年99的阿里云服务器，2 Core 2 GB RAM。 PalServer建议要4 Core 16GB RA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PalWorld Server以及内网穿透">
 <meta property="og:url" content="https://moliyue.xyz/2024/01/28/PalWorld-Server%E4%BB%A5%E5%8F%8A%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.html">
@@ -84,13 +84,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

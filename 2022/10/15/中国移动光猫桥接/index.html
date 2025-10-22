@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>中国移动光猫桥接 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="本来想着把家里的软路由配置上，结果没想到这次办的宽带是光猫路由，路由器桥接模式。 这个模式据说是多一次NAT（这块我不确定），导致网络性能下降，我实际测试感觉还可以没差太多，但是我用云原神的时候网络延迟着实不低。 所以我打算进行一下网络结构的改变。 正常情况下，大多是将光猫调整为桥接模式，之后再将路由器设置为拨号上网即可。但是我家这个光猫的软件无法直接更改模式，只能删除wan重新添加，这样问题就很">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>中国移动光猫桥接 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="本来想着把家里的软路由配置上，结果没想到这次办的宽带是光猫路由，路由器桥接模式。 这个模式据说是多一次NAT（这块我不确定），导致网络性能下降，我实际测试感觉还可以没差太多，但是我用云原神的时候网络延迟着实不低。 所以我打算进行一下网络结构的改变。 正常情况下，大多是将光猫调整为桥接模式，之后再将路由器设置为拨号上网即可。但是我家这个光猫的软件无法直接更改模式，只能删除wan重新添加，这样问题就很">
 <meta property="og:type" content="article">
 <meta property="og:title" content="中国移动光猫桥接">
 <meta property="og:url" content="https://moliyue.xyz/2022/10/15/%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8%E5%85%89%E7%8C%AB%E6%A1%A5%E6%8E%A5/index.html">
@@ -84,13 +84,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

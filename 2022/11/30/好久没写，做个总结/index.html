@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>好久没写，做个总结 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="python抓包scapy 抓包工具123  dpkt 内容分析kubernetes挂载configmap相关问题使用configmap可以使用volume和volume mount进行挂载，具体的还涉及重写整个文件夹还是只添加一个文件（subpath）。但是挂载上去的文件始终没有写权限，即使setmode:0777（十六进制或十进制544吧？），在容器内看也都是有权限的，但是没用。最后就cp一份">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>好久没写，做个总结 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="python抓包scapy 抓包工具123  dpkt 内容分析kubernetes挂载configmap相关问题使用configmap可以使用volume和volume mount进行挂载，具体的还涉及重写整个文件夹还是只添加一个文件（subpath）。但是挂载上去的文件始终没有写权限，即使setmode:0777（十六进制或十进制544吧？），在容器内看也都是有权限的，但是没用。最后就cp一份">
 <meta property="og:type" content="article">
 <meta property="og:title" content="好久没写，做个总结">
 <meta property="og:url" content="https://moliyue.xyz/2022/11/30/%E5%A5%BD%E4%B9%85%E6%B2%A1%E5%86%99%EF%BC%8C%E5%81%9A%E4%B8%AA%E6%80%BB%E7%BB%93/index.html">
@@ -85,13 +85,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

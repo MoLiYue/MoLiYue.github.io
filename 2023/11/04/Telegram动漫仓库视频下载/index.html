@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Telegram动漫仓库视频下载 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="最近看《葬送的芙莉莲》，樱花动漫上的画质，或者说码率太低了，所以想自己找点资源。正好之前在tg上加入了几个动漫仓库的群组，那里面的动画画质都还不错，想能不能利用一下，当做一个源，做个软件自动把自己想看的动漫过滤下载下来。 ChatGPT我对这个也没啥经验，所以主要用ChatGPT来尝试实现这个程序。 目前看可以实现的是监控新的消息，遇到关键字拉取下来。但是想查找历史信息拉取视频不太行，tg好像没有">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Telegram动漫仓库视频下载 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="最近看《葬送的芙莉莲》，樱花动漫上的画质，或者说码率太低了，所以想自己找点资源。正好之前在tg上加入了几个动漫仓库的群组，那里面的动画画质都还不错，想能不能利用一下，当做一个源，做个软件自动把自己想看的动漫过滤下载下来。 ChatGPT我对这个也没啥经验，所以主要用ChatGPT来尝试实现这个程序。 目前看可以实现的是监控新的消息，遇到关键字拉取下来。但是想查找历史信息拉取视频不太行，tg好像没有">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Telegram动漫仓库视频下载">
 <meta property="og:url" content="https://moliyue.xyz/2023/11/04/Telegram%E5%8A%A8%E6%BC%AB%E4%BB%93%E5%BA%93%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD/index.html">
@@ -83,13 +83,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

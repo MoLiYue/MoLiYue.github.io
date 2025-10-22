@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>OpenWRT折腾记录 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="编译一直想试试自己编译一下openwrt，最近总算是搞到机会了。 我选择的是ImmortalWRT，没有选择去build最原始的OpenWRT。我之前在用的树莓派就是ImmortalWRT的版本，所以我就打算继续借用它来入门OpenWRT了。 环境我用的是Archlinux。安装了virtualbox，安装的ubuntu20.04虚拟机，给了100G的空间。上古的弱智用法，我直接用ubuntu容器">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>OpenWRT折腾记录 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="编译一直想试试自己编译一下openwrt，最近总算是搞到机会了。 我选择的是ImmortalWRT，没有选择去build最原始的OpenWRT。我之前在用的树莓派就是ImmortalWRT的版本，所以我就打算继续借用它来入门OpenWRT了。 环境我用的是Archlinux。安装了virtualbox，安装的ubuntu20.04虚拟机，给了100G的空间。上古的弱智用法，我直接用ubuntu容器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="OpenWRT折腾记录">
 <meta property="og:url" content="https://moliyue.xyz/2023/12/26/OpenWRT%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95/index.html">
@@ -83,13 +83,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>树莓派Raspbian那些事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="安装系统使用树莓派官方下载器下载安装，下载时需要代理，如果没有代理最好自己先下载好iso文件再直接导入。 开始之前的准备安装好系统之后，需要现在电脑上调一些设置再插入树莓派开机。 如果想要直接讲树莓派作为服务器不介入屏幕的话，尤其注意需要有限做这几件事。 ssh首先打开ssh访问许可，在根目录下（在win下应该会挂载成boots这个盘）直接新建文件“ssh”，这样就打开了ssh。 树莓派开启ssh">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>树莓派Raspbian那些事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="安装系统使用树莓派官方下载器下载安装，下载时需要代理，如果没有代理最好自己先下载好iso文件再直接导入。 开始之前的准备安装好系统之后，需要现在电脑上调一些设置再插入树莓派开机。 如果想要直接讲树莓派作为服务器不介入屏幕的话，尤其注意需要有限做这几件事。 ssh首先打开ssh访问许可，在根目录下（在win下应该会挂载成boots这个盘）直接新建文件“ssh”，这样就打开了ssh。 树莓派开启ssh">
 <meta property="og:type" content="article">
 <meta property="og:title" content="树莓派Raspbian那些事">
 <meta property="og:url" content="https://moliyue.xyz/2023/07/01/%E6%A0%91%E8%8E%93%E6%B4%BERaspbian%E9%82%A3%E4%BA%9B%E4%BA%8B/index.html">
@@ -84,13 +84,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

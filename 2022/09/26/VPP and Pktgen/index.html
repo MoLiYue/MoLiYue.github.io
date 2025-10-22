@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>VPP and Pktgen | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="VPPvpp是一个大三层的交换机，内部操作与交换机类似。 123456show intshow hardwareshow runshow threadclear interfacesshow ?  Pktgen-DBDKPktgen是一个打流软件，应该是linux原生的（记不清了），它支持lua语言，也有自己的一套语言（感觉就是特化的C）。最近看了一下将Pktgen打包成image，也把lua的功">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>VPP and Pktgen | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="VPPvpp是一个大三层的交换机，内部操作与交换机类似。 123456show intshow hardwareshow runshow threadclear interfacesshow ?  Pktgen-DBDKPktgen是一个打流软件，应该是linux原生的（记不清了），它支持lua语言，也有自己的一套语言（感觉就是特化的C）。最近看了一下将Pktgen打包成image，也把lua的功">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VPP and Pktgen">
 <meta property="og:url" content="https://moliyue.xyz/2022/09/26/VPP%20and%20Pktgen/index.html">
@@ -83,13 +83,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 

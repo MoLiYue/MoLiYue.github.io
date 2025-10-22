@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Github与hexo | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="诶嘿今天一时兴起，想把hexo与github自带的主页看看能不能融合一下，好充分利用一下我写的乱七八糟的东西。 就查阅了一下：  Hexo结合github搭建个人博客  使用hexo+github搭建免费个人博客详细教程   主要用的就是第二篇。我简单题几条我自己做的改进。  使用github时单独为博客建立一个仓库，之后用git管理，这并不影响hexo直接部署到github的个人主页上这个问题。">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Github与hexo | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="诶嘿今天一时兴起，想把hexo与github自带的主页看看能不能融合一下，好充分利用一下我写的乱七八糟的东西。 就查阅了一下：  Hexo结合github搭建个人博客  使用hexo+github搭建免费个人博客详细教程   主要用的就是第二篇。我简单题几条我自己做的改进。  使用github时单独为博客建立一个仓库，之后用git管理，这并不影响hexo直接部署到github的个人主页上这个问题。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Github与hexo">
 <meta property="og:url" content="https://moliyue.xyz/2023/07/03/github%E4%B8%8Ehexo/index.html">
@@ -84,13 +84,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
         }
       }
 
