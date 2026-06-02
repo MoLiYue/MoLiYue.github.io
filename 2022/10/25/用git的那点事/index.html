@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用git的那点事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="Gitgit configGithub现在上传代码一般使用两种方式，一个是ssh，一个是https。 ssh由于安全问题逐步增加了各种限制，最开始我使用的时候还可以密码登录上传。后来就必须要密钥，再到现在需要走443端口（不确定是22端口被ban了，还是安全的问题，还是代理的问题，反正最终结局是用了443端口的ssh）。 https则需要使用gpg key，本机需要有管理gpg key的软件（好像">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>用git的那点事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#eff1f5"><meta name="description" content="Gitgit configGithub现在上传代码一般使用两种方式，一个是ssh，一个是https。 ssh由于安全问题逐步增加了各种限制，最开始我使用的时候还可以密码登录上传。后来就必须要密钥，再到现在需要走443端口（不确定是22端口被ban了，还是安全的问题，还是代理的问题，反正最终结局是用了443端口的ssh）。 https则需要使用gpg key，本机需要有管理gpg key的软件（好像">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用git的那点事">
 <meta property="og:url" content="https://moliyue.xyz/2022/10/25/%E7%94%A8git%E7%9A%84%E9%82%A3%E7%82%B9%E4%BA%8B/index.html">
@@ -84,13 +84,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1e1e2e')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#eff1f5')
         }
       }
 

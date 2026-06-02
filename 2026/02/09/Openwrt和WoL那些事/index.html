@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Openwrt和WoL那些事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F5F8FA"><meta name="description" content="背景我想在不在家时只携带macbook，同时还可以访问高性能windows主机（做做VRC改模什么的）。所以研究了一下网络唤醒。 主机端操作一下内容由ChatGPT提供，经过我评审认为可信。 华硕 B850 主板的网络唤醒（Wake on LAN &#x2F; WOL）一般要 BIOS + Windows 两边都开，不然经常会出现“关机后网卡灯灭，唤不醒”的情况。 下面给你一套比较稳的配置方法（适">
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Openwrt和WoL那些事 | MoLiYue's Blogs</title><meta name="author" content="Mo Lin"><meta name="copyright" content="Mo Lin"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#eff1f5"><meta name="description" content="背景我想在不在家时只携带macbook，同时还可以访问高性能windows主机（做做VRC改模什么的）。所以研究了一下网络唤醒。 主机端操作一下内容由ChatGPT提供，经过我评审认为可信。 华硕 B850 主板的网络唤醒（Wake on LAN &#x2F; WOL）一般要 BIOS + Windows 两边都开，不然经常会出现“关机后网卡灯灭，唤不醒”的情况。 下面给你一套比较稳的配置方法（适">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Openwrt和WoL那些事">
 <meta property="og:url" content="https://moliyue.xyz/2026/02/09/Openwrt%E5%92%8CWoL%E9%82%A3%E4%BA%9B%E4%BA%8B/index.html">
@@ -83,13 +83,13 @@
       const activateDarkMode = () => {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1E1E2E')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#1e1e2e')
         }
       }
       const activateLightMode = () => {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F5F8FA')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#eff1f5')
         }
       }
 

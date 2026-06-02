@@ -1,8 +1,8 @@
 /* Catppuccin Color Scheme for Butterfly Theme */
-/* Latte (Light) + Mocha (Dark) */
+/* Light: Latte | Dark: Mocha */
 
+/* === CSS Variables === */
 :root {
-  /* Catppuccin Latte */
   --ctp-rosewater: #dc8a78;
   --ctp-flamingo: #dd7878;
   --ctp-pink: #ea76cb;
@@ -32,7 +32,6 @@
 }
 
 [data-theme="dark"] {
-  /* Catppuccin Mocha */
   --ctp-rosewater: #f5e0dc;
   --ctp-flamingo: #f2cdcd;
   --ctp-pink: #f5c2e7;
@@ -61,41 +60,19 @@
   --ctp-crust: #11111b;
 }
 
-/* === Light Mode (Catppuccin Latte) === */
-
-/* Background */
-body {
-  background-color: var(--ctp-base) !important;
-}
-
+/* === Global === */
+body,
 #web_bg {
-  background: var(--ctp-base) !important;
-}
-
-/* Cards & Sidebar */
-#aside-content .card-widget,
-#recent-posts > .recent-post-item,
-.layout > div:first-child:not(.recent-posts),
-#page,
-#post,
-.card-widget {
-  background: var(--ctp-mantle) !important;
-}
-
-/* Navigation */
-#nav {
-  background: rgba(220, 224, 232, 0.8) !important;
-  backdrop-filter: blur(10px);
-}
-
-#nav a {
+  background-color: var(--ctp-base) !important;
   color: var(--ctp-text) !important;
 }
 
-/* Text Colors */
-body,
+/* === Typography === */
+p, li, td, th, span, div,
 .post-content,
-#article-container {
+#article-container,
+.aside-content,
+#content-inner {
   color: var(--ctp-text) !important;
 }
 
@@ -103,22 +80,94 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--ctp-text) !important;
 }
 
-/* Links */
-a:not(.btn):not(.card-tag) {
+.post-meta-date,
+.post-meta-categories,
+.post-meta span,
+time {
+  color: var(--ctp-subtext0) !important;
+}
+
+small, .post-count, .aside-count {
+  color: var(--ctp-subtext1) !important;
+}
+
+/* === Links === */
+a {
   color: var(--ctp-blue) !important;
 }
 
-a:not(.btn):not(.card-tag):hover {
+a:hover {
   color: var(--ctp-sapphire) !important;
 }
 
-/* Buttons */
+#article-container a {
+  color: var(--ctp-blue) !important;
+  border-bottom-color: var(--ctp-blue) !important;
+}
+
+#article-container a:hover {
+  color: var(--ctp-sapphire) !important;
+  border-bottom-color: var(--ctp-sapphire) !important;
+}
+
+/* === Navigation === */
+#nav {
+  background: var(--ctp-crust) !important;
+}
+
+#nav a,
+#nav .site-name {
+  color: var(--ctp-text) !important;
+}
+
+#nav.fixed {
+  background: rgba(220, 224, 232, 0.9) !important;
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="dark"] #nav.fixed {
+  background: rgba(17, 17, 27, 0.9) !important;
+}
+
+/* === Cards === */
+#aside-content .card-widget,
+#recent-posts > .recent-post-item,
+.layout > div:first-child:not(.recent-posts),
+#page, #post,
+.card-widget,
+.search-dialog,
+.search-dialog .search-result-container {
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+}
+
+.card-widget .item-headline,
+.card-widget .card-info {
+  color: var(--ctp-text) !important;
+}
+
+/* Post cards on homepage */
+#recent-posts .recent-post-item .recent-post-info .article-title {
+  color: var(--ctp-text) !important;
+}
+
+#recent-posts .recent-post-item .recent-post-info .content {
+  color: var(--ctp-subtext0) !important;
+}
+
+/* === Buttons === */
 #rightside > div > button,
 #rightside > div > a,
-a.btn-beautify,
-#to-top {
+#to-top,
+.btn-beautify {
   background: var(--ctp-surface0) !important;
   color: var(--ctp-text) !important;
+}
+
+#rightside > div > button:hover,
+#rightside > div > a:hover,
+#to-top:hover {
+  background: var(--ctp-surface1) !important;
 }
 
 /* Pagination */
@@ -127,17 +176,32 @@ a.btn-beautify,
   color: var(--ctp-base) !important;
 }
 
-/* Tags */
+#pagination .page-number {
+  color: var(--ctp-text) !important;
+}
+
+/* === Tags & Categories === */
 .card-tag-cloud a,
-#tag-cloud-list a {
+#tag-cloud-list a,
+a.tag-list-link {
   color: var(--ctp-mauve) !important;
 }
 
-/* Code blocks */
+.category-list a {
+  color: var(--ctp-blue) !important;
+}
+
+/* === Code Blocks === */
 figure.highlight,
-.code-expand-btn,
 pre {
-  background: var(--ctp-mantle) !important;
+  background: var(--ctp-crust) !important;
+  color: var(--ctp-text) !important;
+}
+
+figure.highlight .line,
+figure.highlight .code pre,
+figure.highlight .code pre span {
+  color: var(--ctp-text) !important;
 }
 
 code {
@@ -145,151 +209,157 @@ code {
   color: var(--ctp-mauve) !important;
 }
 
-/* Scrollbar */
+figure.highlight .gutter pre {
+  color: var(--ctp-overlay0) !important;
+}
+
+/* Highlight syntax colors */
+.highlight .keyword,
+.highlight .built_in { color: var(--ctp-mauve) !important; }
+.highlight .string,
+.highlight .regexp { color: var(--ctp-green) !important; }
+.highlight .number,
+.highlight .literal { color: var(--ctp-peach) !important; }
+.highlight .comment { color: var(--ctp-overlay0) !important; }
+.highlight .function_ { color: var(--ctp-blue) !important; }
+.highlight .class_,
+.highlight .title { color: var(--ctp-yellow) !important; }
+.highlight .params { color: var(--ctp-maroon) !important; }
+.highlight .attr { color: var(--ctp-yellow) !important; }
+.highlight .variable { color: var(--ctp-flamingo) !important; }
+.highlight .operator { color: var(--ctp-sky) !important; }
+.highlight .property { color: var(--ctp-blue) !important; }
+.highlight .type { color: var(--ctp-yellow) !important; }
+
+/* === Scrollbar === */
 ::-webkit-scrollbar-thumb {
   background: var(--ctp-surface2) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ctp-overlay0) !important;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--ctp-mantle) !important;
 }
 
-/* Footer */
+/* === Footer === */
 #footer {
   background: var(--ctp-crust) !important;
   color: var(--ctp-subtext0) !important;
 }
 
-/* TOC */
+#footer a {
+  color: var(--ctp-subtext1) !important;
+}
+
+/* === TOC === */
 .toc-link.active {
   color: var(--ctp-mauve) !important;
 }
 
-/* Selection */
+.toc-link {
+  color: var(--ctp-subtext0) !important;
+}
+
+/* === Selection === */
 ::selection {
   background: var(--ctp-lavender) !important;
   color: var(--ctp-base) !important;
 }
 
-/* Blockquote */
+/* === Blockquote === */
 blockquote {
   border-left-color: var(--ctp-lavender) !important;
   background: var(--ctp-surface0) !important;
   color: var(--ctp-subtext1) !important;
 }
 
-/* HR */
+/* === HR === */
 hr {
   border-color: var(--ctp-surface1) !important;
 }
 
-/* === Dark Mode Overrides (Catppuccin Mocha) === */
-
-[data-theme="dark"] body {
-  background-color: var(--ctp-base) !important;
+/* === Header/Banner === */
+#page-header {
+  background-color: var(--ctp-crust) !important;
 }
 
-[data-theme="dark"] #web_bg {
-  background: var(--ctp-base) !important;
+#page-header #site-info .site-name {
+  color: var(--ctp-text) !important;
 }
 
-[data-theme="dark"] #aside-content .card-widget,
-[data-theme="dark"] #recent-posts > .recent-post-item,
-[data-theme="dark"] .layout > div:first-child:not(.recent-posts),
-[data-theme="dark"] #page,
-[data-theme="dark"] #post,
-[data-theme="dark"] .card-widget {
+#page-header #site-info .site-subtitle {
+  color: var(--ctp-subtext0) !important;
+}
+
+/* === Sidebar === */
+.card-announcement .content {
+  color: var(--ctp-subtext0) !important;
+}
+
+.card-author .author-info__name {
+  color: var(--ctp-text) !important;
+}
+
+.card-author .author-info__description {
+  color: var(--ctp-subtext0) !important;
+}
+
+.card-author .button--animated {
+  background: var(--ctp-mauve) !important;
+  color: var(--ctp-base) !important;
+}
+
+/* === Archives/List === */
+.article-sort-item .article-sort-item-info .article-sort-title {
+  color: var(--ctp-text) !important;
+}
+
+.article-sort-item .article-sort-item-time {
+  color: var(--ctp-subtext0) !important;
+}
+
+/* === Search === */
+.search-dialog .search-nav .search-close-button {
+  color: var(--ctp-text) !important;
+}
+
+.search-dialog input {
+  background: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface1) !important;
+}
+
+/* === Table === */
+table thead {
+  background: var(--ctp-surface0) !important;
+}
+
+table tr:nth-child(even) {
   background: var(--ctp-mantle) !important;
 }
 
+table td, table th {
+  border-color: var(--ctp-surface1) !important;
+  color: var(--ctp-text) !important;
+}
+
+/* === Dark mode specific fixes === */
 [data-theme="dark"] #nav {
-  background: rgba(17, 17, 27, 0.8) !important;
+  background: var(--ctp-crust) !important;
 }
 
-[data-theme="dark"] #nav a {
-  color: var(--ctp-text) !important;
+[data-theme="dark"] #page-header {
+  background-color: var(--ctp-crust) !important;
 }
 
-[data-theme="dark"] body,
-[data-theme="dark"] .post-content,
-[data-theme="dark"] #article-container {
-  color: var(--ctp-text) !important;
-}
-
-[data-theme="dark"] h1,
-[data-theme="dark"] h2,
-[data-theme="dark"] h3,
-[data-theme="dark"] h4,
-[data-theme="dark"] h5,
-[data-theme="dark"] h6 {
-  color: var(--ctp-text) !important;
-}
-
-[data-theme="dark"] a:not(.btn):not(.card-tag) {
-  color: var(--ctp-blue) !important;
-}
-
-[data-theme="dark"] a:not(.btn):not(.card-tag):hover {
-  color: var(--ctp-sapphire) !important;
-}
-
-[data-theme="dark"] #rightside > div > button,
-[data-theme="dark"] #rightside > div > a,
-[data-theme="dark"] a.btn-beautify,
-[data-theme="dark"] #to-top {
-  background: var(--ctp-surface0) !important;
-  color: var(--ctp-text) !important;
-}
-
-[data-theme="dark"] #pagination .page-number.current {
+[data-theme="dark"] .card-author .button--animated {
   background: var(--ctp-mauve) !important;
   color: var(--ctp-crust) !important;
 }
 
-[data-theme="dark"] .card-tag-cloud a,
-[data-theme="dark"] #tag-cloud-list a {
-  color: var(--ctp-mauve) !important;
-}
-
-[data-theme="dark"] figure.highlight,
-[data-theme="dark"] .code-expand-btn,
-[data-theme="dark"] pre {
-  background: var(--ctp-mantle) !important;
-}
-
-[data-theme="dark"] code {
-  background: var(--ctp-surface0) !important;
-  color: var(--ctp-mauve) !important;
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-thumb {
-  background: var(--ctp-surface2) !important;
-}
-
-[data-theme="dark"] ::-webkit-scrollbar-track {
-  background: var(--ctp-mantle) !important;
-}
-
-[data-theme="dark"] #footer {
-  background: var(--ctp-crust) !important;
-  color: var(--ctp-subtext0) !important;
-}
-
-[data-theme="dark"] .toc-link.active {
-  color: var(--ctp-mauve) !important;
-}
-
-[data-theme="dark"] ::selection {
-  background: var(--ctp-lavender) !important;
+[data-theme="dark"] #pagination .page-number.current {
   color: var(--ctp-crust) !important;
-}
-
-[data-theme="dark"] blockquote {
-  border-left-color: var(--ctp-lavender) !important;
-  background: var(--ctp-surface0) !important;
-  color: var(--ctp-subtext1) !important;
-}
-
-[data-theme="dark"] hr {
-  border-color: var(--ctp-surface1) !important;
 }
