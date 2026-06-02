@@ -113,17 +113,34 @@ a:hover {
 
 /* === Navigation === */
 #nav {
-  background: var(--ctp-crust) !important;
+  background: rgba(51, 204, 187, 0.95) !important;
 }
 
 #nav a,
-#nav .site-name {
-  color: var(--ctp-text) !important;
+#nav .site-name,
+#nav .menus_items span,
+#nav .menus_items i,
+#nav i,
+#toggle-menu {
+  color: #fff !important;
 }
 
 #nav.fixed {
-  background: rgba(220, 224, 232, 0.9) !important;
+  background: rgba(51, 204, 187, 0.92) !important;
   backdrop-filter: blur(8px);
+}
+
+[data-theme="dark"] #nav {
+  background: var(--ctp-crust) !important;
+}
+
+[data-theme="dark"] #nav a,
+[data-theme="dark"] #nav .site-name,
+[data-theme="dark"] #nav .menus_items span,
+[data-theme="dark"] #nav .menus_items i,
+[data-theme="dark"] #nav i,
+[data-theme="dark"] #toggle-menu {
+  color: var(--ctp-text) !important;
 }
 
 [data-theme="dark"] #nav.fixed {
@@ -138,8 +155,20 @@ a:hover {
 .card-widget,
 .search-dialog,
 .search-dialog .search-result-container {
-  background: var(--ctp-mantle) !important;
+  background: #fff !important;
   color: var(--ctp-text) !important;
+  box-shadow: 0 2px 12px rgba(51, 204, 187, 0.08) !important;
+}
+
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] #recent-posts > .recent-post-item,
+[data-theme="dark"] .layout > div:first-child:not(.recent-posts),
+[data-theme="dark"] #page, [data-theme="dark"] #post,
+[data-theme="dark"] .card-widget,
+[data-theme="dark"] .search-dialog,
+[data-theme="dark"] .search-dialog .search-result-container {
+  background: var(--ctp-mantle) !important;
+  box-shadow: none !important;
 }
 
 .card-widget .item-headline,
@@ -161,13 +190,27 @@ a:hover {
 #rightside > div > a,
 #to-top,
 .btn-beautify {
-  background: var(--ctp-surface0) !important;
-  color: var(--ctp-text) !important;
+  background: #33ccbb !important;
+  color: #fff !important;
 }
 
 #rightside > div > button:hover,
 #rightside > div > a:hover,
 #to-top:hover {
+  background: #00a0e9 !important;
+}
+
+[data-theme="dark"] #rightside > div > button,
+[data-theme="dark"] #rightside > div > a,
+[data-theme="dark"] #to-top,
+[data-theme="dark"] .btn-beautify {
+  background: var(--ctp-surface0) !important;
+  color: var(--ctp-text) !important;
+}
+
+[data-theme="dark"] #rightside > div > button:hover,
+[data-theme="dark"] #rightside > div > a:hover,
+[data-theme="dark"] #to-top:hover {
   background: var(--ctp-surface1) !important;
 }
 
@@ -195,22 +238,45 @@ a.tag-list-link {
 /* === Code Blocks === */
 figure.highlight,
 pre {
-  background: var(--ctp-crust) !important;
-  color: var(--ctp-text) !important;
+  background: #f0faf9 !important;
+  color: #2c3e50 !important;
+  border: 1px solid rgba(51, 204, 187, 0.15) !important;
 }
 
 figure.highlight .line,
 figure.highlight .code pre,
 figure.highlight .code pre span {
-  color: var(--ctp-text) !important;
+  color: #2c3e50 !important;
 }
 
 code {
+  background: rgba(51, 204, 187, 0.1) !important;
+  color: #33ccbb !important;
+}
+
+figure.highlight .gutter pre {
+  color: #acb0be !important;
+}
+
+[data-theme="dark"] figure.highlight,
+[data-theme="dark"] pre {
+  background: var(--ctp-mantle) !important;
+  color: var(--ctp-text) !important;
+  border-color: var(--ctp-surface0) !important;
+}
+
+[data-theme="dark"] figure.highlight .line,
+[data-theme="dark"] figure.highlight .code pre,
+[data-theme="dark"] figure.highlight .code pre span {
+  color: var(--ctp-text) !important;
+}
+
+[data-theme="dark"] code {
   background: var(--ctp-surface0) !important;
   color: var(--ctp-mauve) !important;
 }
 
-figure.highlight .gutter pre {
+[data-theme="dark"] figure.highlight .gutter pre {
   color: var(--ctp-overlay0) !important;
 }
 
@@ -234,24 +300,49 @@ figure.highlight .gutter pre {
 
 /* === Scrollbar === */
 ::-webkit-scrollbar-thumb {
-  background: var(--ctp-surface2) !important;
+  background: #33ccbb !important;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ctp-overlay0) !important;
+  background: #00a0e9 !important;
 }
 
 ::-webkit-scrollbar-track {
+  background: var(--ctp-base) !important;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: var(--ctp-surface2) !important;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: var(--ctp-overlay0) !important;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
   background: var(--ctp-mantle) !important;
 }
 
 /* === Footer === */
 #footer {
+  background: #33ccbb !important;
+  color: #fff !important;
+}
+
+#footer a,
+#footer .footer-copyright,
+#footer .footer_custom_text {
+  color: #fff !important;
+}
+
+[data-theme="dark"] #footer {
   background: var(--ctp-crust) !important;
   color: var(--ctp-subtext0) !important;
 }
 
-#footer a {
+[data-theme="dark"] #footer a,
+[data-theme="dark"] #footer .footer-copyright,
+[data-theme="dark"] #footer .footer_custom_text {
   color: var(--ctp-subtext1) !important;
 }
 
@@ -266,12 +357,23 @@ figure.highlight .gutter pre {
 
 /* === Selection === */
 ::selection {
+  background: rgba(51, 204, 187, 0.3) !important;
+  color: #2c3e50 !important;
+}
+
+[data-theme="dark"] ::selection {
   background: var(--ctp-lavender) !important;
-  color: var(--ctp-base) !important;
+  color: var(--ctp-crust) !important;
 }
 
 /* === Blockquote === */
 blockquote {
+  border-left-color: #33ccbb !important;
+  background: rgba(51, 204, 187, 0.06) !important;
+  color: #2c3e50 !important;
+}
+
+[data-theme="dark"] blockquote {
   border-left-color: var(--ctp-lavender) !important;
   background: var(--ctp-surface0) !important;
   color: var(--ctp-subtext1) !important;
@@ -283,15 +385,19 @@ hr {
 }
 
 /* === Header/Banner === */
-#page-header {
-  background-color: var(--ctp-crust) !important;
-}
-
 #page-header #site-info .site-name {
-  color: var(--ctp-text) !important;
+  color: #fff !important;
 }
 
 #page-header #site-info .site-subtitle {
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+[data-theme="dark"] #page-header #site-info .site-name {
+  color: var(--ctp-text) !important;
+}
+
+[data-theme="dark"] #page-header #site-info .site-subtitle {
   color: var(--ctp-subtext0) !important;
 }
 
@@ -309,8 +415,9 @@ hr {
 }
 
 .card-author .button--animated {
-  background: var(--ctp-mauve) !important;
-  color: var(--ctp-base) !important;
+  background: #33ccbb !important;
+  color: #fff !important;
+  border: none !important;
 }
 
 /* === Archives/List === */
