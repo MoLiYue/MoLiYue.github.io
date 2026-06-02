@@ -364,3 +364,13 @@ table td, table th {
 [data-theme="dark"] #pagination .page-number.current {
   color: var(--ctp-crust) !important;
 }
+
+/* === Images: no darkening in light mode === */
+img {
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+[data-theme="dark"] img {
+  filter: brightness(0.9) !important;
+}
